@@ -1,0 +1,38 @@
+
+.portfolio-wrap {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-content: space-around;
+
+  padding: 0 15px;
+}
+
+/deep/ .mat-card {
+  &.portfolio-card {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    margin-bottom: 25px;
+    width: 350px;
+
+    &:hover {
+      box-shadow: 0px 14px 106px -29px rgba(0,0,0,0.75);
+    }
+
+    img {
+      margin: 15px 0;
+      height: 200px;
+      object-fit: contain;
+    }
+
+    .mat-card-content {
+      margin-bottom: 0;
+      margin-top: 15px;
+    }
+
+  }
+}

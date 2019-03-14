@@ -1,0 +1,54 @@
+@import "~assets/styles/material/palette";
+@import "~assets/styles/variables";
+
+
+:host {
+  color: white;
+}
+
+
+.mat-list-item {
+  color: white;
+  border-bottom: 1px solid rgba(0,0,0,0.3);
+  border-top: 1px solid rgba(255,255,255,0.04);
+}
+
+.sidebar-logo {
+  padding: 0 15px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+
+.logo {
+  font-size: 54px;
+  border: 2px solid map_get($mat-amber, A200);
+  border-radius: 100%;
+  height: 130px;
+  width: 130px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  @media(max-width: $md) {
+    font-size: 38px;
+    width: 85px;
+    height: 85px;
+  }
+
+}
+
+/deep/ .mat-list-base {
+
+  .mat-list-item {
+
+    .mat-list-text {
+
+      .link-name {
+        font-size: 20px;
+      }
+
+    }
+
+  }
+}

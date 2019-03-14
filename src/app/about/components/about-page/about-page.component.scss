@@ -1,0 +1,59 @@
+@import "~assets/styles/variables";
+
+.descr {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  margin: 50px 0;
+  padding: 25px 15px;
+
+  background-color: #f4f2f4;
+
+  @media (max-width: $md) {
+    flex-direction: column;
+    margin-top: 0;
+  }
+
+}
+
+.descr-icon {
+  flex: 0 0 auto;
+  width: 100px;
+  height: 100px;
+
+  margin-right: 50px;
+
+  background-image: url(/assets/img/me.jpg);
+  background-size: cover;
+  border-radius: 100%;
+
+  @media (max-width: $md) {
+    margin-right: 0;
+  }
+}
+
+.descr-content__title {
+  font-size: 30px;
+}
+
+.about-item {
+  margin-bottom: 25px;
+  padding: 0;
+  border: 1px solid rgba(120, 120, 120, 0.15);
+}
+
+.about-item__title {
+  padding: 15px;
+  background-color: #f4f8f9;
+}
+
+.about-item__text {
+  padding: 10px 15px;
+  line-height: 32px;
+}
+
+.main-content {
+  max-width: 800px;
+  margin: 0 auto;
+}

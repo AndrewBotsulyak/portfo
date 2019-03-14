@@ -1,0 +1,52 @@
+@import '~assets/styles/variables';
+
+:host {
+  display: flex;
+  flex-direction: column;
+
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  overflow: hidden;
+}
+
+/deep/ .mat-toolbar {
+  display: flex;
+  justify-content: space-between;
+  flex: 0 0 auto;
+}
+
+/deep/ .mat-drawer-container {
+  flex: 1;
+  height: 100%;
+}
+
+/deep/ .mat-drawer-inner-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.custom-sidebar {
+  width: 250px;
+  background-color: #252527;
+}
+
+.app-content {
+  padding: 25px 0 50px;
+  color: $text-color;
+}
+
+/deep/ a {
+  color: $text-color;
+  text-decoration: none;
+  border-bottom: 2px solid #ffd300;
+}
+
+.contacts {
+  margin-bottom: 30px;
+  color: white;
+  text-align: center;
+}

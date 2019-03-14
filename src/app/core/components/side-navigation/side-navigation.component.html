@@ -1,0 +1,26 @@
+
+<div class="sidebar-logo">
+  <p class="logo">
+    AB
+  </p>
+</div>
+
+<mat-nav-list>
+
+  <a mat-list-item [routerLink]="['/']" routerLinkActive="mat-active">
+    <mat-icon matListIcon svgIcon="icon-about"></mat-icon>
+
+    <p matLine class="link-name">About</p>
+  </a>
+  <a mat-list-item [routerLink]="['/experience']" routerLinkActive="mat-active">
+    <mat-icon matListIcon svgIcon="icon-experience"></mat-icon>
+
+    <p matLine class="link-name">Experience</p>
+  </a>
+  <a mat-list-item [routerLink]="['/portfolio']" routerLinkActive="mat-active">
+    <mat-icon matListIcon svgIcon="icon-portfolio"></mat-icon>
+
+    <p matLine class="link-name">Portfolio</p>
+  </a>
+
+</mat-nav-list>
